@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PT.FallGuys</title>    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+            padding: 0px;
+        }
+        body{
+            font-family: sans-serif;
+           
+        }
+        .header {
+            background-color: rgba(20, 20, 20, 0.904);
+            height: 80px;
+            
+            width: 100%;
+            top: 0;
+            left: 0;
+        }
+        .nav{
+            display: flex;
+            justify-content: space-between;
+
+            max-width: 992px;
+            margin: 0 auto;
+        }
+        .nav-link{
+            color:white;
+            text-decoration: none;
+        }
+        .logo{
+            font-size: 30px;
+            font-weight: bold;
+            padding: 0 40px;
+            line-height: 80px;
+        }
+
+        .nav-menu {
+            display: flex;
+            margin-right: 40px;
+            list-style: none;
+
+        }
+        .nav-menu-link:hover{
+            background-color: rgb(54, 54, 54);
+            transition: 0.5s;
+        }
+        .nav-menu-item{
+            font-size: 18px;
+            margin: 0 15px;
+            line-height: 80px;
+            text-transform: uppercase;
+            width: max-content;
+        }
+
+        .nav-menu-link{
+            padding: 8px 12px;
+            border-radius: 3px;
+        }
+     
+    
+        .nav-link-p{
+            background-color: rgb(54, 54, 54);
+            
+        }
+        .main-container{
+            border: 1px solid black;
+            width: 325px;
+            margin: 87px auto 40px;
+        }
+        article{
+            width: 100%;
+            height: 440px;
+            padding: 48px;
+        }
+
+        .attribution{
+            font-size: 11px;
+            text-align: center;
+
+        }
+
+        .attribution a {
+            color: rgb(65, 65, 65);
+        }
+        .contenedor {
+            width: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            
+        }
+
+        .contenedor figure{
+            position: absolute;
+            height: 450px;
+            width: 350px;
+            overflow: hidden;
+            border-radius: 6px;
+            box-shadow: 0px 15px 25px rgba(0,0,0,0.6);
+            cursor: pointer;
+            
+
+        }
+        .contenedor figure a img{
+
+
+            width: 100%;
+            height: 100%;
+            transition: all 500ms ease-out;
+            object-fit: cover;
+            margin: auto;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .contenedor figure .capa{
+
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(48, 134, 22, 0.664);
+            transition: all 500ms ease-out;
+            opacity: 0;
+            visibility: hidden;
+            text-align: center;
+       }
+
+       .contenedor figure:hover > .capa{
+            opacity: 1;
+            visibility: visible;
+
+       }
+
+       .contenedor figure:hover > .capa h3{
+        margin-top: 160px;
+        margin-bottom: 15px;
+        font-size: 40px;
+        color: rgb(8, 240, 97);
+        -webkit-text-stroke: 2px rgba(255, 255, 255, 0.418);
+        
+       }
+       .contenedor figure:hover > a img{
+        transform: scale(1.3);
+       }
+       .contenedor figure .capa h3{
+        color: white;
+        font-weight: 400px;
+        margin-bottom: 320px;
+        transition: all 500ms ease-out;
+        margin-top: 30px;
+
+       }
+       .contenedor figure .capa p{
+
+        color: white;
+        font-size: 25px;
+        line-height: 1;
+        width: 100%;
+        max-width: 220px;
+        margin: auto;
+       }
+       @media (min-width:144px){
+            .contenedor{
+                
+                display: flex;
+
+            }
+        }
+        
+       
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="prueba.html" class="logo nav-link">ProTips</a>
+            <ul class="nav-menu">
+                <li class="nav-menu-item">
+                    <a href="FG.html" class="nav-menu-link nav-link nav-link-p">Fall Guys</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="#" class="nav-menu-link nav-link ">Valorant</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="#" class="nav-menu-link nav-link">League Of Legends</a>
+                </li>
+            </ul>
+            
+        </nav>
+
+    <div class="contenedor">
+        
+        <figure>
+            <a href="https://www.youtube.com/watch?v=zwV0hptGQfw">
+                <img src="crack.jpg" alt="">
+            </a>
+            <div class="capa">
+                <h3>EASY</h3>
+                <p>Tus Portips mas Faciles </p>
+            </div>
+        </figure>
+        
+    </div>
+       
+    
+    
+ 
+    <section>
+    <div class="attribution">
+        Challenge by <a href="prueba.html">ProTips</a>.
+        Coded by <a href="#">Benjamin Q.</a>
+    </div>
+    </section>
+        
+    </header>   
+</body>    
+</html>

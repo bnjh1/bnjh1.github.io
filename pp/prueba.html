@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProTips</title>
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: sans-serif;
+            background-image: linear-gradient(
+                0deg,
+                rgba(0,0,0,0.5),
+                rgba(0,0,0,0.5)
+            )
+            ,url("gamer2.jpg");
+            margin: 0;
+            min-height: 100vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            z-index: -1;
+        }
+        .header {
+            background-color: rgba(20, 20, 20, 0.904);
+            height: 80px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+        }
+        .nav{
+            display: flex;
+            justify-content: space-between;
+
+            max-width: 992px;
+            margin: 0 auto;
+        }
+        .nav-link{
+            color:white;
+            text-decoration: none;
+        }
+        .logo{
+            font-size: 30px;
+            font-weight: bold;
+            padding: 0 40px;
+            line-height: 80px;
+        }
+
+        .nav-menu {
+            display: flex;
+            margin-right: 40px;
+            list-style: none;
+
+        }
+        .nav-menu-item{
+            font-size: 18px;
+            margin: 0 15px;
+            line-height: 80px;
+            text-transform: uppercase;
+            width: max-content;
+        }
+
+        .nav-menu-link{
+            padding: 8px 12px;
+            border-radius: 3px;
+        }
+        .nav-menu-link:hover{
+            background-color: rgb(54, 54, 54);
+            transition: 0.5s;
+        }
+
+        .pepe{
+            line-height: 200px;
+            
+        }
+        .titulo{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            flex-direction: column;
+            color: white;
+            height: 90vh;
+            font-size: 60px;
+            text-shadow: black 0.1em 0.2em 0.3em;
+        }
+     
+        
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="#" class="logo nav-link">ProTips</a>
+            <ul class="nav-menu">
+                <li class="nav-menu-item">
+                    <a href="FG.html" class="nav-menu-link nav-link">Fall Guys</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="#" class="nav-menu-link nav-link">Valorant</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="#" class="nav-menu-link nav-link">League Of Legends</a>
+                </li>
+            </ul>
+            
+        </nav>
+        <div class="titulo">
+            <h1>
+                ProTips
+            </h1>
+        </div>
+    </header>
+
+</body>
+</html>
